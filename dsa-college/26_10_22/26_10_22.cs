@@ -10,7 +10,7 @@ namespace dsa_college._26._10._22
 {
     class Program<T>
     {
-        public static void Main1(string[] args)
+        public static void Main(string[] args)
         {
 
             Stack<int> s1 = new Stack<int>();

@@ -26,10 +26,10 @@ namespace dsa_college._31_10_22
             Console.WriteLine(b.Distance(a));
             Point c = new Point(15, -5);
             Point d = new Point(3, 4);
-            d.Equals(a);
-            d.Equals(c);
+            Console.WriteLine(  d.Equals(a)) ;
+            Console.WriteLine(   d.Equals(c));
             Point e = new Point(d);
-            e.Equals(a);
+            Console.WriteLine(   e.Equals(a));
 
 
 
