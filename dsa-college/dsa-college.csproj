@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="10_11_22\1.Program.cs" />
-    <Compile Include="10_11_22\HomeAssignment.cs" />
-    <Compile Include="10_11_22\Lecturer.cs" />
-    <Compile Include="10_11_22\Person.cs" />
-    <Compile Include="10_11_22\Student.cs" />
-    <Compile Include="10_11_22\Website.cs" />
-    <Compile Include="26_10_22\26_10_22.cs" />
-    <Compile Include="26_10_22\Stack.cs" />
-    <Compile Include="31_10_22\Point.cs" />
-    <Compile Include="31_10_22\Program.cs" />
+    <Compile Include="3_10_11_22\1.Program.cs" />
+    <Compile Include="3_10_11_22\HomeAssignment.cs" />
+    <Compile Include="3_10_11_22\Lecturer.cs" />
+    <Compile Include="3_10_11_22\Person.cs" />
+    <Compile Include="3_10_11_22\Student.cs" />
+    <Compile Include="3_10_11_22\Website.cs" />
+    <Compile Include="1_26_10_22\26_10_22.cs" />
+    <Compile Include="1_26_10_22\Stack.cs" />
+    <Compile Include="2_31_10_22\Point.cs" />
+    <Compile Include="2_31_10_22\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
