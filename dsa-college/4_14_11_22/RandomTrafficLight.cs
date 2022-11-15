@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace dsa_college._4_14_11_22
 {
-    public class GreenTrafficLight
+    public class RandomTrafficLight : TrafficLight 
     {
-
+        
     }
 }

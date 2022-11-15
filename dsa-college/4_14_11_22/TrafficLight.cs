@@ -8,6 +8,7 @@ namespace dsa_college._4_14_11_22
 {
     public abstract class TrafficLight
     {
-
+        
+        
     }
 }

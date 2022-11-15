@@ -8,6 +8,7 @@ namespace dsa_college._4_14_11_22
 {
     public class Road
     {
-
+        Junction startingJunction;
+        Junction endingJunction;
     }
 }

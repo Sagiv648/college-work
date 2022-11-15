@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace dsa_college._4_14_11_22
 {
-    public class Junction
+    public class Junction : Point
     {
-
+        List<Road> enteringRoads;
+        List<Road> exitingRoads;
+        TrafficLight trafficLight;
     }
 }

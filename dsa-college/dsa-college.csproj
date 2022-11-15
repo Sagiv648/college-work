@@ -59,15 +59,14 @@
     <Compile Include="2_31_10_22\Program.cs" />
     <Compile Include="4_14_11_22\1.Program.cs" />
     <Compile Include="4_14_11_22\DrivingGame.cs" />
-    <Compile Include="4_14_11_22\GreenTrafficLight.cs" />
+    <Compile Include="4_14_11_22\RandomTrafficLight.cs" />
     <Compile Include="4_14_11_22\Junction.cs" />
     <Compile Include="4_14_11_22\Map.cs" />
     <Compile Include="4_14_11_22\Point.cs" />
-    <Compile Include="4_14_11_22\RedTrafficLight.cs" />
     <Compile Include="4_14_11_22\Road.cs" />
     <Compile Include="4_14_11_22\TrafficLight.cs" />
     <Compile Include="4_14_11_22\Vehicle.cs" />
-    <Compile Include="4_14_11_22\YellowTrafficLight.cs" />
+    <Compile Include="4_14_11_22\ConsistentTrafficLight.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
