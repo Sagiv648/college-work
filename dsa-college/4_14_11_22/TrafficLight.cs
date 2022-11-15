@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dsa_college._4_14_11_22
 {
-    public class TrafficLight
+    public abstract class TrafficLight
     {
 
     }
