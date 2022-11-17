@@ -33,6 +33,10 @@ namespace dsa_college._4_14_11_22
 
         }
 
+        public Junction GetStartingJunction() => startingJunction;
+
+        public Junction GetEndingJunction() => endingJunction;
+
         public double GetLength() => startingJunction.Distance(endingJunction);
 
         public override string ToString()
