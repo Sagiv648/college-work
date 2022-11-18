@@ -22,17 +22,37 @@ namespace dsa_college._4_14_11_22
         public void Play(int turns)
         {
             int k = 1;
+            int j = 0;
             while(k <= turns)
             {
                 Console.WriteLine($"\n\nTurn {k}:\n\n");
                 for(int i = 0; i < vehiclesAmount.Count; i++)
                 {
-                    vehiclesAmount[i].Move();
-                    int j = 0;
-                    //for(; j < vehiclesAmount[i].GetRoute().Count; j++)
-                    //{
-                    //    vehiclesAmount[i].GetRoute()[j].GetStartingJunction().GetTrafficLight().Check();
-                    //}
+                    
+
+                    
+                    for (; j < vehiclesAmount[i].GetRoute().Count; j++)
+                    {  
+                        TrafficLight tl = vehiclesAmount[i].GetRoute()[j].GetStartingJunction().GetTrafficLight();
+                    
+                        vehiclesAmount[i].Move();
+                        if(tl != null)
+                        {
+                            tl.Check();
+                            if (vehiclesAmount[i].GetRoute()[j] != tl.GetCurrentGreen())
+                            {
+                                while (tl.GetCurrentGreen() != null)
+                                {
+                                    tl.Check();
+                                    k++;
+                                }
+
+                            }
+
+                        }
+                            
+                        
+                    }
                 }
                 k++;
             }

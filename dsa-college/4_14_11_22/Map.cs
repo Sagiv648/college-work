@@ -86,7 +86,7 @@ namespace dsa_college._4_14_11_22
                                 break;
                             case 1:
                                 tl = new ConsistentTrafficLight(j);
-                                j.SetTrafficLight(tl);
+                                j.SetTrafficLight( tl);
                                 
                                 break;
                             default:

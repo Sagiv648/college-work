@@ -21,6 +21,7 @@ namespace dsa_college._4_14_11_22
         }
 
 
+
         public abstract void Check();
 
         public abstract Road GetCurrentGreen();

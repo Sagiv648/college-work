@@ -24,6 +24,9 @@ namespace dsa_college._4_14_11_22
             pausingTime--;
             if(pausingTime == 0)
             {
+                if (roadsCounter == junction.GetEnteringRoads().Count)
+                    roadsCounter = 0;
+
                 isGreen = junction.GetEnteringRoads()[roadsCounter++];
                 /*
                  * Random TrafficLights Junction 18, delay= 2: green light on Road from
@@ -34,6 +37,7 @@ namespace dsa_college._4_14_11_22
                 Console.WriteLine($"{this} {isGreen.GetStartingJunction()}, delay {pausingTime}:" +
                     $"green light on the road from {isGreen.GetStartingJunction()} to {isGreen.GetEndingJunction()}");
             }
+            isGreen = null;
         }
 
         public override Road GetCurrentGreen() => isGreen;

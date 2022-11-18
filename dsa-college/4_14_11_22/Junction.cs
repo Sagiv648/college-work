@@ -16,6 +16,7 @@ namespace dsa_college._4_14_11_22
 
         public Junction() 
         {
+            //trafficLight = new ConsistentTrafficLight(this);
             jId = ++counter;
             Console.WriteLine($"Creating {this} at {base.ToString()}");
         }
@@ -38,7 +39,11 @@ namespace dsa_college._4_14_11_22
 
         public List<Road> GetExitingRoads() => exitingRoads;
 
-        public void SetTrafficLight(TrafficLight tl) => trafficLight = tl;
+        public void SetTrafficLight(TrafficLight tl) {
+            
+            trafficLight = tl;
+            
+        }
 
         public TrafficLight GetTrafficLight() => trafficLight;
 
