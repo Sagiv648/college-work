@@ -10,7 +10,7 @@ namespace dsa_college._4_14_11_22
     {
         List<Road> enteringRoads = new List<Road>();
         List<Road> exitingRoads = new List<Road>();
-        TrafficLight trafficLight = null;
+        TrafficLight trafficLight;
         static int counter = 0;
         int jId;
 
@@ -29,6 +29,8 @@ namespace dsa_college._4_14_11_22
         public void AddEnteringRoad(Road road) => enteringRoads.Add(road);
 
         public void AddExitingRoad(Road road) => exitingRoads.Add(road);
+
+        
 
         public int GetJId() => jId;
 

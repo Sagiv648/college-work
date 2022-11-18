@@ -63,7 +63,9 @@ namespace dsa_college._4_14_11_22
                 Math.Pow((axisX - another.axisX), 2) +
                 Math.Pow((axisY - another.axisY), 2)
                 );
-            Console.WriteLine("The distance between {0} and {1} is {2:f2}", this, another, output);
+                if(GetType() == typeof(Point))
+                    Console.WriteLine("The distance between {0} and {1} is {2:f2}", this, another, output);
+               
             //d^2 = (x1-x2)^2 + (y1-y2)^2
             return output;
         }

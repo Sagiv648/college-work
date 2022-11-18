@@ -19,6 +19,7 @@ namespace dsa_college._4_14_11_22
 
         public override void Check()
         {
+            pausingTime--;
             if(pausingTime == 0)
             {
                 isGreen = junction.GetEnteringRoads()

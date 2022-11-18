@@ -33,11 +33,17 @@ namespace dsa_college._4_14_11_22
 
         }
 
+        public double GetRoadLength()
+        {
+            //Console.WriteLine($"The length of the road from {startingJunction} to {endingJunction} is {startingJunction.Distance(endingJunction):.00}");
+            return startingJunction.Distance(endingJunction);
+        }
+
         public Junction GetStartingJunction() => startingJunction;
 
         public Junction GetEndingJunction() => endingJunction;
 
-        public double GetLength() => startingJunction.Distance(endingJunction);
+        //public double GetLength() => startingJunction.Distance(endingJunction);
 
         public override string ToString()
         {
