@@ -79,10 +79,16 @@ def Q3b(grades,func):
     thus the entire procedure will return False or 0
 
     '''
-    return functools.reduce(lambda x,y: bool(x * (y < 100)),
+    return functools.reduce(lambda x,y: bool(x * (y <= 100)),
     map(lambda x: func(x),
     filter(lambda x: x >= 0 and x <= 100,grades)),True)
 
+
+def Q4(func, data):
+    return (lambda f,d: tuple(
+      functools.reduce(lambda a,b: a + (b,) if len(list(filter(lambda c: c(b) ,f))) == 1 else a + ()
+      ,d,()  ))
+        )(func,data)
 
 
 Q5a = lambda x: len(list(filter(lambda x: x[1] >= 55, x))) == len(x)
@@ -179,7 +185,12 @@ def main():
     
     
 
-
+    '''
+    Q5 examples
+    print(Q4((lambda x: x>0, lambda x: x%2==0, lambda x: 9<abs(x)<100),(20,-45,133,8,400,7,
+        -300,68,7,1001)))
+    '''
+    
 
 
 
