@@ -16,6 +16,8 @@ namespace dsa_college._4_14_11_22
         int vehId;
         int travellingTime = 0;
         bool finishedRoute = false;
+        int travellingRoutePtr = 0;
+        
         public Vehicle(Map map)
         {
             travellingRoute = map.SelectRandomJunction();
@@ -26,18 +28,21 @@ namespace dsa_college._4_14_11_22
         }
         public void Move()
         {
-            if (!finishedRoute)
+            if (!finishedRoute && travellingRoutePtr < travellingRoute.Count)
             {
-                int i=0;
-                for(i = 0; i < travellingRoute.Count; i++)
+                if( (++travellingTime * speed) >= travellingRoute[travellingRoutePtr].GetRoadLength())
                 {
-                    Console.WriteLine($"{this} is moving on the road from {travellingRoute[i].GetStartingJunction()} to {travellingRoute[i].GetEndingJunction()}");
-                    while ((travellingTime * speed) < travellingRoute[i].GetRoadLength())
-                        travellingTime++;
-                    Console.WriteLine($"{this} has arrived to {travellingRoute[i].GetEndingJunction()}");
+                    Console.WriteLine($"{this} has arrived to {travellingRoute[travellingRoutePtr].GetEndingJunction()}");
+                    travellingRoutePtr++;
                 }
-                finishedRoute = true;
+                else
+                {
+                    Console.WriteLine($"{this} is moving on the road from {travellingRoute[travellingRoutePtr].GetStartingJunction()} to {travellingRoute[travellingRoutePtr].GetEndingJunction()}");
+                }
 
+                if (travellingRoutePtr == travellingRoute.Count)
+                    finishedRoute = true;
+                
             }
             else
             {

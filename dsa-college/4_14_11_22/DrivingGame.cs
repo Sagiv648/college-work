@@ -28,29 +28,22 @@ namespace dsa_college._4_14_11_22
                 Console.WriteLine($"\n\nTurn {k}:\n\n");
                 for(int i = 0; i < vehiclesAmount.Count; i++)
                 {
-                    
 
-                    
-                    for (; j < vehiclesAmount[i].GetRoute().Count; j++)
+                    for (j = 0; j < vehiclesAmount[i].GetRoute().Count; j++)
                     {  
                         TrafficLight tl = vehiclesAmount[i].GetRoute()[j].GetStartingJunction().GetTrafficLight();
-                    
-                        vehiclesAmount[i].Move();
                         if(tl != null)
                         {
                             tl.Check();
-                            if (vehiclesAmount[i].GetRoute()[j] != tl.GetCurrentGreen())
+                            if (tl.GetCurrentGreen() == vehiclesAmount[i].GetRoute()[j])
                             {
-                                while (tl.GetCurrentGreen() != null)
-                                {
-                                    tl.Check();
-                                    k++;
-                                }
-
+                                vehiclesAmount[i].Move();
                             }
-
+                            else
+                            {
+                                vehiclesAmount[i].Move();
+                            }
                         }
-                            
                         
                     }
                 }

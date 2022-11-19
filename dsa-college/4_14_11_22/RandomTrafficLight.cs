@@ -34,7 +34,7 @@ namespace dsa_college._4_14_11_22
                 Console.WriteLine($"{this} {isGreen.GetStartingJunction()}, delay {pausingTime}:" +
                     $"green light on the road from {isGreen.GetStartingJunction()} to {isGreen.GetEndingJunction()}");
             }
-            isGreen = null;
+            
         }
 
         public override Road GetCurrentGreen() => isGreen;
