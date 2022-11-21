@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>dsa_college._4_14_11_22.MainClass</StartupObject>
+    <StartupObject>dsa_college._5_21_11_22.GameDriver</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -67,6 +67,14 @@
     <Compile Include="4_14_11_22\TrafficLight.cs" />
     <Compile Include="4_14_11_22\Vehicle.cs" />
     <Compile Include="4_14_11_22\ConsistentTrafficLight.cs" />
+    <Compile Include="5_21_11_22\1.Program.cs" />
+    <Compile Include="5_21_11_22\Action.cs" />
+    <Compile Include="5_21_11_22\ConsistentPlayer.cs" />
+    <Compile Include="5_21_11_22\Game.cs" />
+    <Compile Include="5_21_11_22\Player.cs" />
+    <Compile Include="5_21_11_22\PrisonerDilemmas.cs" />
+    <Compile Include="5_21_11_22\RandomPlayer.cs" />
+    <Compile Include="5_21_11_22\RockPaperScissors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
