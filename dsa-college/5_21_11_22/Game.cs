@@ -30,14 +30,9 @@ namespace dsa_college._5_21_11_22
         }
         void PlaySingleTurn()
         {
-            if(GetType() != typeof(Game))
-            {
-                
-                RewardPlayers(p1.SelectAction(actions), p2.SelectAction(actions));
 
-            }
-                
-            
+            RewardPlayers(p1.SelectAction(actions), p2.SelectAction(actions));
+
         }
         protected abstract void RewardPlayers(Action a1, Action a2);
 

@@ -22,6 +22,7 @@ namespace dsa_college._5_21_11_22
 
         protected override void RewardPlayers(Action a1, Action a2)
         {
+            
             if (!a1.Equals(a2))
             {
                 Console.WriteLine($"{GetFirstPlayer().GetName()}: {a1.GetName()}({GetFirstPlayer().GetScore()}) -- {GetSecondPlayer().GetName()}:{a2.GetName()}({GetSecondPlayer().GetScore()})");
