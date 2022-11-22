@@ -30,14 +30,20 @@ namespace dsa_college._5_21_11_22
         }
         void PlaySingleTurn()
         {
-            p1.SelectAction(actions);
-            p2.SelectAction(actions);
+            if(GetType() != typeof(Game))
+            {
+                
+                RewardPlayers(p1.SelectAction(actions), p2.SelectAction(actions));
+
+            }
+                
+            
         }
         protected abstract void RewardPlayers(Action a1, Action a2);
 
         public Player GetWinner()
         {
-            return p1.GetScore() > p2.GetScore() ? p1 : p2;
+            return p1.GetScore() == p2.GetScore() ? null : p1.GetScore() > p2.GetScore() ? p1 : p2 ;
         }
         protected Player GetFirstPlayer() => p1;
 

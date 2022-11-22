@@ -11,6 +11,7 @@ namespace dsa_college._5_21_11_22
         public PrisonerDilemmas(Player p1, Player p2) : base(p1, p2, "Prisoner's Dilema")
         {
             actions = new Action[2];
+            InitActions();
         }
 
         protected override void InitActions()
@@ -23,8 +24,11 @@ namespace dsa_college._5_21_11_22
         {
             if (!a1.Equals(a2))
             {
-                Player winner = a1.GetName() == actions[1].GetName() ? GetFirstPlayer() : GetSecondPlayer();
-                winner.UpdateScore(winner.GetScore() + 1);
+                Console.WriteLine($"{GetFirstPlayer().GetName()}: {a1.GetName()}({GetFirstPlayer().GetScore()}) -- {GetSecondPlayer().GetName()}:{a2.GetName()}({GetSecondPlayer().GetScore()})");
+
+
+                GetFirstPlayer().UpdateScore(GetFirstPlayer().GetScore() + (a1.GetName() == actions[1].GetName() ? 1 : 0));
+                GetSecondPlayer().UpdateScore(GetSecondPlayer().GetScore() + (a2.GetName() == actions[1].GetName() ? 1 : 0));
             }
         }
     }
