@@ -47,6 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="0_dsa_exams\1_Summer_2021_A\Store.cs" />
+    <Compile Include="0_dsa_exams\1_Summer_2021_A\Tablet.cs" />
     <Compile Include="3_10_11_22\1.Program.cs" />
     <Compile Include="3_10_11_22\HomeAssignment.cs" />
     <Compile Include="3_10_11_22\Lecturer.cs" />

@@ -14,12 +14,14 @@ namespace dsa_college._5_21_11_22
         {
             Player p1 = new RandomPlayer("Sagiv");
             Player p2 = new ConsistentPlayer("Tom");
+            Game g = new RockPaperScissors(p1, p2);
 
-
-            Game g = new PrisonerDilemmas(p1, p2);
             g.Play(5);
-            Console.WriteLine(g.GetWinner().GetName());
-            
+            Player winner = g.GetWinner();
+            Console.WriteLine("{0}", winner == null ? "tie" : winner.GetName());
+
+
+
 
 
 

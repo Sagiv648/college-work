@@ -135,7 +135,7 @@ namespace dsa_college._4_14_11_22
             
             int i = 0;
             
-            int j = 0;
+            
             for(i = 0; i < 4; i++)
             {
                 if (tmp == null)
