@@ -27,17 +27,15 @@ def Q3(dic):
     :param dic:
     :return:
     '''
-    mutable = 0
     types = {}
     for val in dic.values():
         types[type(val)] = types.get(type(val),0) + 1
+        #types[type(val)] = types[type(val)] + 1 if type(val) in types.keys() else 1
     for key in types.keys():
         if(key == list or key == dict):
-            mutable = 1
-            break
-    if(not mutable):
-        return {val: key for key,val in dic.items()}
-    return set(filter(lambda x: type(x) != list and type(x) != dict ,dic.values()))
+            return set(filter(lambda x: type(x) != list and type(x) != dict ,dic.values()))
+    return {val: key for key,val in dic.items()}
+
 
 
 def Q4(string, stoppingWords):
@@ -52,7 +50,7 @@ def Q4(string, stoppingWords):
     output = {}
     for i in words:
         output[i.lower()] = output.get(i.lower(),0) + 1
-    return  output
+    return output
 
 def Q5(string):
     '''
@@ -74,6 +72,11 @@ Q1
 print(Q1({1:2, 3:'abc', 5:1})) -> True
 print(Q1({1:2, 3:'abc', 5:21})) -> False
 '''
+'''
+Q2
+print(Q2([12321,3854,2452,78652,5,44]))
+'''
+
 '''
 Q3
 print(Q3({1:2, 3:4, 5:6}))
