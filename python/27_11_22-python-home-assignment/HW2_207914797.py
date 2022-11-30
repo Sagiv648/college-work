@@ -18,7 +18,12 @@ def Q1(dic):
     return False
 
 def Q2(seq):
-    pass
+    '''
+    The procedure filters the list by the items which their length as a string equal to their length as a set
+    if they are equal the number doesn't have duplicate digits
+    else it does
+    '''
+    return list(filter(lambda x: len(str(x)) == len(reduce(lambda a,b: a.union(b) ,str(x), set())) ,seq))
 
 def Q3(dic):
     '''
