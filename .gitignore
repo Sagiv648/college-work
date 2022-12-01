@@ -10,6 +10,8 @@
 *.userosscache
 *.sln.docstates
 
+HW*.py
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -306,7 +308,6 @@ _Pvt_Extensions
 .paket/paket.exe
 paket-files/
 
-HW*.py
 
 # FAKE - F# Make
 .fake/
