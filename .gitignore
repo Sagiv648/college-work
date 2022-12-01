@@ -306,6 +306,8 @@ _Pvt_Extensions
 .paket/paket.exe
 paket-files/
 
+HW*.py
+
 # FAKE - F# Make
 .fake/
 
