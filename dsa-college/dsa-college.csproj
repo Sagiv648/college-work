@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>dsa_college._0_dsa_exams.Summer_2022_B._8th_question.Program</StartupObject>
+    <StartupObject>dsa_college._0_dsa_exams.Summer_2021_A._10th_question.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="0_dsa_exams\BinNode.cs" />
     <Compile Include="0_dsa_exams\Node.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\10th_question\CodeFile1.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Book.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Clothes.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Dress.cs" />
