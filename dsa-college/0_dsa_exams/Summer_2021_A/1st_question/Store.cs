@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace dsa_college._0_dsa_exams._1_Summer_2021_A
+namespace dsa_college._0_dsa_exams._1_Summer_2021_A._1st_question
 {
     public class Store
     {

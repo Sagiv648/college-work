@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>dsa_college._5_21_11_22.GameDriver</StartupObject>
+    <StartupObject>dsa_college._0_dsa_exams.Summer_2022_B._8th_question.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -47,8 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="0_dsa_exams\1_Summer_2021_A\Store.cs" />
-    <Compile Include="0_dsa_exams\1_Summer_2021_A\Tablet.cs" />
+    <Compile Include="0_dsa_exams\BinNode.cs" />
+    <Compile Include="0_dsa_exams\Node.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Book.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Clothes.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Dress.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Shipping.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Shirt.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\4th_question\Program.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\5th_question\Program.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\7th_question\Program.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\1st_question\Store.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\1st_question\Tablet.cs" />
+    <Compile Include="0_dsa_exams\Summer_2022_B\1st_question\CodeFile1.cs" />
+    <Compile Include="0_dsa_exams\Summer_2022_B\2nd_question\CodeFile1.cs" />
+    <Compile Include="0_dsa_exams\Summer_2022_B\5th_question\CodeFile1.cs" />
+    <Compile Include="0_dsa_exams\Summer_2022_B\8th_question\CodeFile1.cs" />
     <Compile Include="3_10_11_22\1.Program.cs" />
     <Compile Include="3_10_11_22\HomeAssignment.cs" />
     <Compile Include="3_10_11_22\Lecturer.cs" />
@@ -80,8 +94,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\1.Program.cs" />
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="0_dsa_exams\Summer_2022_B\10th_question\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
