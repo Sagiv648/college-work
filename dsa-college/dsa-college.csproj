@@ -50,6 +50,7 @@
     <Compile Include="0_dsa_exams\BinNode.cs" />
     <Compile Include="0_dsa_exams\Node.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\10th_question\CodeFile1.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\2nd_question\CodeFile1.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Book.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Clothes.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Dress.cs" />
