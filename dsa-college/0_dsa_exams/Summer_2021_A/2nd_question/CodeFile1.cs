@@ -6,8 +6,9 @@ namespace dsa_college._0_dsa_exams.Summer_2021_A._2nd_question
     public class Program
     {
 
-        public static Queue<int> Duplicates(Queue<int> q1)
+        public static Queue<int> Duplicates(Queue<int> qInput)
         {
+            Queue<int> q1 = new Queue<int>(qInput);
             Queue<int> q2 = new Queue<int>();
             int num = 0;
             Queue<int> output = new Queue<int>();
@@ -77,6 +78,7 @@ namespace dsa_college._0_dsa_exams.Summer_2021_A._2nd_question
             {
                 Console.WriteLine(item);
             }
+            
 
             Console.Read();
         }
