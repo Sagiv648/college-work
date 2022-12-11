@@ -6,8 +6,9 @@ namespace dsa_college._0_dsa_exams.Summer_2022_B._1st_question
 {
     public class Program
     {
-        public static bool EqualSums(Stack<int> stack)
+        public static bool EqualSums(Stack<int> stackInput)
         {
+            Stack < int > stack = new Stack<int>(stackInput);
             Stack<int> tmpFirstHalf = new Stack<int>();
             Stack<int> tmpSecHalf = new Stack<int>();
             int count=0;

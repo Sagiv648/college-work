@@ -62,6 +62,8 @@
     <Compile Include="0_dsa_exams\Summer_2021_A\7th_question\Program.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\1st_question\Store.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\1st_question\Tablet.cs" />
+    <Compile Include="0_dsa_exams\Summer_2022_A\1st_question\CodeFile1.cs" />
+    <Compile Include="0_dsa_exams\Summer_2022_A\2nd_question\CodeFile1.cs" />
     <Compile Include="0_dsa_exams\Summer_2022_B\1st_question\CodeFile1.cs" />
     <Compile Include="0_dsa_exams\Summer_2022_B\2nd_question\CodeFile1.cs" />
     <Compile Include="0_dsa_exams\Summer_2022_B\5th_question\CodeFile1.cs" />
