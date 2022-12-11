@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>%24%28SolutionDir%29\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -50,6 +50,8 @@
     <Compile Include="0_dsa_exams\BinNode.cs" />
     <Compile Include="0_dsa_exams\Node.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\10th_question\CodeFile1.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\11th_question\CodeFile1.cs" />
+    <Compile Include="0_dsa_exams\Summer_2021_A\2nd_question\CodeFile1.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Book.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Clothes.cs" />
     <Compile Include="0_dsa_exams\Summer_2021_A\3rd_question\Dress.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="5_21_11_22\PrisonerDilemmas.cs" />
     <Compile Include="5_21_11_22\RandomPlayer.cs" />
     <Compile Include="5_21_11_22\RockPaperScissors.cs" />
+    <Compile Include="CodeFile1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

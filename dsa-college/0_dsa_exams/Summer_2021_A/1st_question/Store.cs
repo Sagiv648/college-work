@@ -18,6 +18,9 @@ namespace dsa_college._0_dsa_exams._1_Summer_2021_A._1st_question
         }
         public bool AddTablet(Tablet tab)
         {
+            if (systems[0] + systems[1] + systems[2] >= tablets.Length)
+                return false;
+
             int i = 0;
             Tablet t = null;
             while(i < tablets.Length && tablets[i] != null)

@@ -59,10 +59,15 @@ namespace dsa_college._0_dsa_exams.Summer_2021_A._10th_question
             }
             tmp.next = firstStudent;
         }
+
+        
     }
+
+   
 
     public class Program
     {
+
         public static void Main(string[] args)
         {
             Student x = new Student();
